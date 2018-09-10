@@ -19,6 +19,7 @@ int * shellSort(int *vector, int vector_size) {
             vector [j] = aux;
         }
     }
+    return vector;
 }
 
 void shellSort_sort_case(char *text, int *vector, int vector_size)
@@ -30,6 +31,6 @@ void shellSort_sort_case(char *text, int *vector, int vector_size)
     end = clock();
     printf("%s\n", text);
 
-    printf("Tempo de execução da busca: %lfs\n", (double)(end - start)/CLOCKS_PER_SEC);
+    printf("Tempo de execução da ordenação: %lfs\n", (double)(end - start)/CLOCKS_PER_SEC);
     printf("------------------\n");
 }

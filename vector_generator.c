@@ -30,11 +30,7 @@ int *oriented_vector_generator(int vector_size, int max_value){
 //Pior caso vetor em ordem decrescente
 int *worst_case_vector(int vector_size, int max_value){
 
-  int *vector = malloc(sizeof(int) * vector_size);
-
-  for(int i=0; i<vector_size; i++){
-    vector[i] = vector_size - i;
-  }
+  int *vector = aleatory_vector_generator(vector_size, max_value+999999999);
 
   return vector;
 }
